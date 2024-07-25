@@ -58,7 +58,7 @@ jobs:
         run: |
           set -euxo pipefail
 
-          VERSION="$(git rev-parse HEAD)"
+          VERSION="5.0.0-mobius"
           TAG="$VERSION"
           MAJOR_TAG="$(sed -nre 's/^([0-9]+).*/\1/p' <<< "$VERSION")"
           GITHUB_IMAGE="ghcr.io/mobidev/thelounge"
