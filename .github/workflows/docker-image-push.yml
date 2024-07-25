@@ -58,7 +58,7 @@ jobs:
         run: |
           set -euxo pipefail
 
-          VERSION="$(git describe --exact-match --tags HEAD)"
+          VERSION="4.4.3-mobi"
           TAG="$VERSION"
           MAJOR_TAG="$(sed -nre 's/^([0-9]+).*/\1/p' <<< "$VERSION")"
           GITHUB_IMAGE="ghcr.io/mobidev/thelounge"
